@@ -5,6 +5,8 @@
 /**
  * main - check if a number is positive or negative
  *
+ * and print the last digit of the number stored in the variable n
+ *
  * Return: 0 if error
  */
 int main(void)
