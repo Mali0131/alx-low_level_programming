@@ -1,63 +1,31 @@
 #include <stdio.h>
-
-
-
 /**
+ * main - output all single digit number of base 10
  *
- *  *main -> assign a random number to the variable n each time it is executed
- *
- *   *and print the last digit of the number stored in the variable n
- *
- *    *Return: Always 0 (Success)
- *
- *     */
-
+ * Return: o if success
+ */
 int main(void)
-
 {
+	int var;
 
-	int ch;
-
-	int n;
-
-	for (ch = 48; ch <= 57; ch++)
-
+	for (var = 0; var < 9; var++)
 	{
+		int ii;
 
-		for (n = 49; n <= 57; n++)
-
+		for (ii = var + 1; ii < 10; ii++)
 		{
-
-			if (n > ch)
-
+			putchar((var %  10) + '0');
+			putchar((ii % 10) + '0');
+			if (var != 8)
 			{
-
-				putchar(ch);
-
-				putchar(n);
-
-				if (ch != 56 || n != 57)
-
-				{
-
-					putchar(44);
-
-					putchar(32);
-
-				}
-
+				putchar(',');
+				putchar(' ');
 			}
-
+			else
+				continue;
 		}
-
 	}
-
-
-
-	putchar(10); /* this is an ascii code for new line*/
-
-
+	putchar('\n');
 
 	return (0);
-
 }
