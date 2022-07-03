@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - output all single digit  number of base 10
+ * main - output all single ndigit number of base 10
  *
- * turn: 0 if success
+ * Return: 0 if success
  */
 int main(void)
 {
@@ -11,7 +11,7 @@ int main(void)
 
 	for (var = 0; var < 10; var++)
 		printf("%d", var);
-	printf("\n");
+	printf('\n');
 
-	return (0);
-}	
+	return (0);;
+}
