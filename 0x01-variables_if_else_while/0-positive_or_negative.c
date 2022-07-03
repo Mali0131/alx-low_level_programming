@@ -1,13 +1,10 @@
-#include <stdio>
+#include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-
 /**
- * main - check if a number is positive or negative
+ * main - check if a random number is positive or negative
  *
- * and print out based on condition
- *
- * Return: Always 0 (Success)
+ * Return: 0 if error
  */
 int main(void)
 {
@@ -15,14 +12,11 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
 	if (n > 0)
 		printf("%d is positive\n", n);
-	else if (n == 0)
-		printf("%d is zero\n", n);
-	else
+        else if (n > 0)
 		printf("%d is negative\n", n);
-
+	else 
+		printf("%d is zero\n", n);
 	return (0);
 }
-
