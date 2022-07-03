@@ -1,39 +1,17 @@
 #include <stdio.h>
-
-
-
 /**
+ * main - output all single digit number of base 10
  *
- *  *main -> assign a random number to the variable n each time it is executed
- *
- *   *and print the last digit of the number stored in the variable n
- *
- *    *Return: Always 0 (Success)
- *
- *     */
-
+ * Return: 0 if success
+ */
 int main(void)
-
 {
+	int var;
 
-	int ch;
+	for (var = 0; var < 10; var++)
+		putchar((var % 10) + '0');
 
-	for (ch = 48; ch <= 57; ch++)
-
-	{
-
-
-
-		putchar(ch);
-
-	}
-
-
-
-	putchar(10); /* this is an ascii code for new line*/
-
-
+	putchar('\n');
 
 	return (0);
-
 }
