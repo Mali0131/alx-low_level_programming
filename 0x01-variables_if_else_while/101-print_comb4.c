@@ -1,65 +1,39 @@
 #include <stdio.h>
-
-
-
 /**
+ * main - output all single digit number of base 10
  *
- *  * main - prints all possible different combinations of three digits
- *
- *   * Return: Always 0 (Success)
- *
- *    */
-
+ * Return: 0 if success
+ */
 int main(void)
-
 {
+	int var;
 
-	int n, m, l;
-
-
-
-	for (n = 48; n < 58; n++)
-
+	for (var = 0; var < 8; var++)
 	{
+		int ii;
 
-		for (m = 49; m < 58; m++)
-
+		for (ii = var + 1; ii < 9; ii++)
 		{
+			int jj;
 
-			for (l = 50; l < 58; l++)
-
+			for (jj = ii + 1; jj < 10; jj++)
 			{
+				putchar((var % 10) + '0');
+				putchar((ii % 10) + '0');
+				putchar((jj % 10) + '0');
 
-				if (l > m && m > n)
-
+				if (var != 7)
 				{
-
-					putchar(n);
-
-					putchar(m);
-
-					putchar(l);
-
-					if (n != 55 || m != 56)
-
-					{
-
-						putchar(',');
-
-						putchar(' ');
-
-					}
-
+					putchar(',');
+					putchar(' ');
 				}
-
+				else
+					continue;
 			}
-
 		}
-
 	}
 
 	putchar('\n');
-
+	
 	return (0);
-
 }
