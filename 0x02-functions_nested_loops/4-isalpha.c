@@ -1,6 +1,10 @@
 #include "main.h"
 /**
  * _isalpha - checks for alphabetic character.
+ * @c: charcter to be checked
+ *
+ * created - Muhammad_ali
+ * cc: 5th july, 2022
  *
  * Return: 1 if c is a letter, 0 otherwise
  */
