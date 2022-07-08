@@ -7,7 +7,6 @@
  * @c: an integer argument
  *
  * Return: success
- *
  */
 
 int _isdigit(int c)
