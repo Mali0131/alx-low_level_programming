@@ -3,18 +3,13 @@
 
 
 /**
+ * reset_to_98 - takes a pointer to a variable and changes it value
  *
- *  * reset_to_98 - takes a pointer to a variable and changes it value
+ * @n: value to be change
+ * Created by: Sanctus-Peter
  *
- *   * @n: value to be change
- *
- *    *
- *
- *     * Created by: Sanctus-Peter
- *
- *      * cc: 12th july, 2022.
- *
- *       */
+ * cc: 12th july, 2022.
+ */
 
 
 
