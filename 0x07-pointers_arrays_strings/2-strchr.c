@@ -5,16 +5,15 @@
 
 
 /**
- * _strchr - locates a character in a string.
- * @s: the string
- * c: the character
+ * _strchr - find a character in a string
+ * @s: pointer to the string s to be searched
+ * @c: character to be found
+ * Return: pointer to the first occurence of the character c
  *
- * Return: a pointer to the first occurrence of the
- * character c in the string s,
+ * Created by: Sanctus-Peter
  *
- * or NULL if the character is not found
+ * cc: 17th july, 2022.
  */
-
 char *_strchr(char *s, char c)
 {
 	return (strchr(s, c));
